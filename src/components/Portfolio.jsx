@@ -14,7 +14,7 @@ const Portfolio = () => {
             title: 'Rameeza',
             category: 'Weddings',
             image: 'https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80',
-            videoUrl: '/video/rameeza.mov',
+            videoUrl: '/video/wedding_rameeza.mov',
             description: 'A cinematic wedding film.'
         },
         {
@@ -22,7 +22,7 @@ const Portfolio = () => {
             title: 'Kappil Kodi',
             category: 'Commercials',
             image: 'https://images.unsplash.com/photo-1533750516457-a7f992034fec?auto=format&fit=crop&q=80',
-            videoUrl: '/video/mac%20edit%20.mp4',
+            videoUrl: '/video/mac_edit.mp4',
             description: 'Creative edit showcasing Mac capabilities.'
         },
         {
@@ -30,7 +30,7 @@ const Portfolio = () => {
             title: 'Friends',
             category: 'Travel',
             image: 'https://images.unsplash.com/photo-1469474932334-9a25690d0cc1?auto=format&fit=crop&q=80',
-            videoUrl: '/video/0213.mp4',
+            videoUrl: '/video/project_0213_main.mp4',
             description: 'Travel diary captured on 0213.'
         },
         {
@@ -38,7 +38,7 @@ const Portfolio = () => {
             title: 'Emotional',
             category: 'Reels',
             image: 'https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&q=80',
-            videoUrl: '/video/0213(1).mp4',
+            videoUrl: '/video/project_0213_1.mp4',
             description: 'Highlight reel version 1.'
         },
         {
@@ -46,7 +46,7 @@ const Portfolio = () => {
             title: 'NANDI HILLS',
             category: 'Travel',
             image: 'https://images.unsplash.com/photo-1511285560982-1351cdeb9804?auto=format&fit=crop&q=80',
-            videoUrl: '/video/0213(2).mp4',
+            videoUrl: '/video/project_0213_2.mp4',
             description: 'Highlight reel version 2.'
         },
         {
@@ -54,7 +54,7 @@ const Portfolio = () => {
             title: 'Birthday',
             category: 'Reels',
             image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&q=80',
-            videoUrl: '/video/IMG_7789.MP4',
+            videoUrl: '/video/birthday_7789.mp4',
             description: 'Raw footage edit from 7789.'
         }
     ];
