@@ -16,7 +16,7 @@ const Hero = () => {
                     className="w-full h-full object-cover scale-105"
                     poster="https://images.unsplash.com/photo-1536240478700-b869070f9279?auto=format&fit=crop&q=80"
                 >
-                    <source src="/video/jbr.mp4" type="video/mp4" />
+                    <source src="/video/Jbr.mp4" type="video/mp4" />
                 </video>
             </div>
 
