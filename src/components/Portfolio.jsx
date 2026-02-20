@@ -30,7 +30,7 @@ const Portfolio = () => {
             title: 'JBR',
             category: 'Travel',
             image: 'https://images.unsplash.com/photo-1580674684081-7617fbf3d745?auto=format&fit=crop&q=80',
-            videoUrl: '/video/jbr.mov',
+            videoUrl: '/video/jbr.mp4',
             description: 'A vibrant walk along JBR – the beating heart of Dubai\'s waterfront.'
         },
 
