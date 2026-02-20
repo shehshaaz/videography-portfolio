@@ -2,31 +2,209 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ═══════════════════════════════════════════
+   ARABIC LUXURY PORTFOLIO — GLOBAL STYLES
+   Primary: #0a0a0a | Gold: #C9A227
+═══════════════════════════════════════════ */
+
 @layer base {
+  :root {
+    --gold: #C9A227;
+    --gold-light: #E8C547;
+    --gold-dim: rgba(201, 162, 39, 0.15);
+    --gold-shimmer: linear-gradient(105deg, #9A7A1A 0%, #E8C547 40%, #C9A227 60%, #9A7A1A 100%);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     @apply bg-chaos-black text-white font-sans overflow-x-hidden antialiased;
+    background-image:
+      radial-gradient(ellipse at 20% 0%, rgba(201,162,39,0.04) 0%, transparent 50%),
+      radial-gradient(ellipse at 80% 100%, rgba(201,162,39,0.03) 0%, transparent 50%);
   }
-  h1, h2, h3, h4, h5, h6 {
+
+  /* Arabic text elements use the calligraphic font */
+  .ar {
+    font-family: 'Scheherazade New', 'Noto Naskh Arabic', serif;
+    direction: rtl;
+    text-align: center;
+    line-height: 1.6;
+  }
+
+  /* English luxury headings */
+  h1, h2, h3 {
     @apply font-syne uppercase tracking-wide;
   }
+
+  h4, h5, h6 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    @apply tracking-wide;
+  }
 }
 
-@layer utilities {
+@layer components {
+
+  /* ── Gold Shimmer Text ── */
+  .gold-shimmer {
+    background: linear-gradient(105deg, #9A7A1A 0%, #F5E070 35%, #C9A227 55%, #E8C547 70%, #9A7A1A 100%);
+    background-size: 250% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shimmer 4s linear infinite;
+  }
+
+  /* ── Arabic Calligraphy Display ── */
+  .arabic-display {
+    font-family: 'Scheherazade New', 'Noto Naskh Arabic', serif;
+    direction: rtl;
+    font-weight: 700;
+    line-height: 1.4;
+    letter-spacing: 0.02em;
+  }
+
+  /* ── Luxury Glass Card ── */
   .glass {
-    @apply bg-white/5 backdrop-blur-lg border border-white/10;
+    @apply bg-white/5 backdrop-blur-lg border border-white/8;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.05);
   }
+
+  .glass-gold {
+    background: linear-gradient(135deg, rgba(201,162,39,0.06) 0%, rgba(201,162,39,0.02) 100%);
+    @apply backdrop-blur-lg border border-chaos-gold/20;
+    box-shadow: 0 4px 30px rgba(201,162,39,0.05), inset 0 1px 0 rgba(201,162,39,0.08);
+  }
+
+  /* ── Arabesque Ornament Divider ── */
+  .arabesque-divider {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    justify-content: center;
+  }
+
+  .arabesque-divider::before,
+  .arabesque-divider::after {
+    content: '';
+    flex: 1;
+    max-width: 120px;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #C9A227, transparent);
+  }
+
+  /* ── Section Label (Arabic sub-header style) ── */
+  .section-label {
+    @apply text-chaos-gold text-sm font-bold tracking-[0.3em] uppercase;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+  }
+
+  /* ── Gold Border Accent ── */
+  .gold-border-top {
+    border-top: 1px solid;
+    border-image: linear-gradient(90deg, transparent, #C9A227 50%, transparent) 1;
+  }
+
+  /* ── Luxury Button ── */
+  .btn-luxury {
+    @apply relative overflow-hidden px-8 py-3 text-chaos-black font-bold uppercase tracking-widest text-xs;
+    background: linear-gradient(135deg, #C9A227 0%, #E8C547 50%, #C9A227 100%);
+    background-size: 200% auto;
+    transition: background-position 0.5s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 20px rgba(201,162,39,0.3);
+  }
+
+  .btn-luxury:hover {
+    background-position: right center;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(201,162,39,0.5);
+  }
+
+  .btn-outline-luxury {
+    @apply relative px-8 py-3 font-medium uppercase tracking-widest text-xs text-white;
+    border: 1px solid rgba(201,162,39,0.4);
+    backdrop-filter: blur(8px);
+    transition: all 0.3s ease;
+  }
+
+  .btn-outline-luxury:hover {
+    border-color: #C9A227;
+    color: #C9A227;
+    box-shadow: 0 0 20px rgba(201,162,39,0.2), inset 0 0 20px rgba(201,162,39,0.05);
+  }
+
+  /* ── Text gradient ── */
   .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-chaos-gold via-white to-chaos-gold bg-[length:200%_auto] animate-pulse-slow;
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, #C9A227 0%, #F5E070 50%, #C9A227 100%);
+    background-size: 200% auto;
+    animation: shimmer 4s linear infinite;
+  }
+
+  /* ── Ornamental diamond ── */
+  .ornament-diamond {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background: #C9A227;
+    transform: rotate(45deg);
+    margin: 0 8px;
+    vertical-align: middle;
+    opacity: 0.8;
   }
 }
 
-/* Custom Scrollbar */
-::-webkit-scrollbar {
-  width: 8px;
-}
-::-webkit-scrollbar-track {
-  @apply bg-chaos-black;
-}
+/* ═══ Custom Scrollbar ═══ */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #0a0a0a; }
 ::-webkit-scrollbar-thumb {
-  @apply bg-chaos-dark rounded-full border border-white/10 hover:bg-chaos-gold/50 transition-colors;
+  background: linear-gradient(180deg, #9A7A1A, #C9A227);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover { background: #C9A227; }
+
+/* ═══ Selection ═══ */
+::selection { background: rgba(201,162,39,0.25); color: #fff; }
+
+/* ═══ Arabesque SVG Pattern (subtle background) ═══ */
+.pattern-arabesque {
+  background-color: #0a0a0a;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%23C9A227' fill-opacity='0.025'%3E%3Cpath d='M40 0L0 40L40 80L80 40L40 0zM40 10L70 40L40 70L10 40L40 10z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* ═══ Keyframes ═══ */
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+@keyframes glowPulse {
+  0%, 100% { box-shadow: 0 0 20px rgba(201,162,39,0.15); }
+  50% { box-shadow: 0 0 50px rgba(201,162,39,0.4); }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes slideUp {
+  0% { transform: translateY(20px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+/* ═══ Arabic Hero Glow ═══ */
+.arabic-glow {
+  text-shadow:
+    0 0 30px rgba(201,162,39,0.4),
+    0 0 80px rgba(201,162,39,0.15),
+    0 2px 4px rgba(0,0,0,0.8);
 }
