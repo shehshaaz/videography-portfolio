@@ -8,16 +8,14 @@ const Hero = () => {
             {/* ── Video Background ── */}
             <div className="absolute inset-0 z-0">
                 <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-chaos-black z-10" />
-                <video
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                    className="w-full h-full object-cover scale-105"
-                    poster="https://images.unsplash.com/photo-1536240478700-b869070f9279?auto=format&fit=crop&q=80"
-                >
-                    <source src="/video/Jbr.mp4" type="video/mp4" />
-                </video>
+                <div className="absolute inset-0 w-full h-full pointer-events-none overflow-hidden">
+                    <iframe
+                        src="https://player.vimeo.com/video/1166854351?background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
+                        className="absolute top-1/2 left-1/2 w-[100vw] h-[56.25vw] min-h-[100vh] min-w-[177.77vh] -translate-x-1/2 -translate-y-1/2"
+                        allow="autoplay; fullscreen; picture-in-picture"
+                        title="Hero Background"
+                    ></iframe>
+                </div>
             </div>
 
             {/* ── Arabesque Vignette Corners ── */}
