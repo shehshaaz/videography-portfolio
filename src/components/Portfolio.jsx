@@ -11,56 +11,71 @@ const Portfolio = () => {
     const projects = [
         {
             id: 7,
-            title: 'Jumeirah',
+            // title: 'Jumeirah',
             category: 'Travel',
             image: 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&q=80',
             videoUrl: '/video/jumeirah.mov',
+            embedUrl: 'https://player.vimeo.com/video/1166677815?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479',
             description: 'A cinematic journey through the iconic Jumeirah coastline in Dubai.'
         },
         {
             id: 8,
-            title: 'Dubai After Dark',
+            // title: 'Dubai After Dark',
             category: 'Travel',
             image: 'https://images.unsplash.com/photo-1468476396571-4d6f2a427ee7?auto=format&fit=crop&q=80',
             videoUrl: '/video/dubai-afterdark.mov',
+            embedUrl: 'https://player.vimeo.com/video/1166677923?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479',
             description: "Dubai's dazzling nightlife and skyline captured after dark."
         },
         {
             id: 9,
-            title: 'JBR',
+            // title: 'JBR',
             category: 'Travel',
             image: 'https://images.unsplash.com/photo-1580674684081-7617fbf3d745?auto=format&fit=crop&q=80',
             videoUrl: '/video/Jbr.mp4',
+            embedUrl: 'https://player.vimeo.com/video/1166677692?badge=0&autopause=0&player_id=0&app_id=58479',
             description: 'A vibrant walk along JBR – the beating heart of Dubai\'s waterfront.'
+        },
+        {
+            id: 10,
+            // title: 'JBR Reel',
+            category: 'Reels',
+            image: 'https://images.unsplash.com/photo-1546412414-e1885259563a?auto=format&fit=crop&q=80',
+            videoUrl: '/video/Jbr-reel.mov',
+            embedUrl: 'https://player.vimeo.com/video/1166854351?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479',
+            description: 'A vertical reel capturing the essence of JBR.'
         },
 
         {
             id: 11,
-            title: 'Rubicon',
+            // title: 'Rubicon',
             category: 'Car',
             image: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&q=80',
             videoUrl: '/video/rubicon.mp4',
+            embedUrl: 'https://player.vimeo.com/video/1166854070?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479',
             description: 'A cinematic showcase of the iconic Jeep Rubicon – raw power meets stunning visuals.'
         },
         {
             id: 12,
-            title: 'Interior',
+            // title: 'Interior',
             category: 'Commercials',
             image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&q=80',
             videoUrl: '/video/interior.mp4',
+            embedUrl: 'https://player.vimeo.com/video/1166854189?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479',
             description: 'An elegant commercial capturing the beauty of modern interior design.'
         },
         {
             id: 13,
-            title: 'Kashmir',
+            // title: 'Kashmir',
             category: 'Travel',
             image: 'https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&q=80',
             videoUrl: '/video/kashmir.mp4',
+            embedUrl: 'https://player.vimeo.com/video/1166854456?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479',
             description: 'Paradise on earth – a cinematic journey through the valleys of Kashmir.'
         },
         {
             id: 1,
-            title: 'Rameeza',
+            // title: 'Rameeza',
             category: 'Weddings',
             image: 'https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80',
             videoUrl: '/video/wedding_rameeza.mov',
@@ -68,42 +83,47 @@ const Portfolio = () => {
         },
         {
             id: 2,
-            title: 'Kappil Kodi',
+            // title: 'Kappil Kodi',
             category: 'Commercials',
             image: 'https://images.unsplash.com/photo-1533750516457-a7f992034fec?auto=format&fit=crop&q=80',
             videoUrl: '/video/mac_edit.mp4',
+            embedUrl: 'https://player.vimeo.com/video/1166854487?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479',
             description: 'Creative edit showcasing Mac capabilities.'
         },
         {
             id: 3,
-            title: 'Friends',
+            // title: 'Friends',
             category: 'Travel',
             image: 'https://images.unsplash.com/photo-1469474932334-9a25690d0cc1?auto=format&fit=crop&q=80',
             videoUrl: '/video/project_0213_main.mp4',
+            embedUrl: 'https://player.vimeo.com/video/1166854969?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479',
             description: 'Travel diary captured on 0213.'
         },
         {
             id: 4,
-            title: 'Emotional',
+            // title: 'Emotional',
             category: 'Reels',
             image: 'https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&q=80',
             videoUrl: '/video/project_0213_1.mp4',
+            embedUrl: 'https://player.vimeo.com/video/1166854711?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479',
             description: 'Highlight reel version 1.'
         },
         {
             id: 5,
-            title: 'NANDI HILLS',
+            // title: 'NANDI HILLS',
             category: 'Travel',
             image: 'https://images.unsplash.com/photo-1511285560982-1351cdeb9804?auto=format&fit=crop&q=80',
             videoUrl: '/video/project_0213_2.mp4',
+            embedUrl: 'https://player.vimeo.com/video/1166854768?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479',
             description: 'Highlight reel version 2.'
         },
         {
             id: 6,
-            title: 'Birthday',
+            // title: 'Birthday',
             category: 'Reels',
             image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&q=80',
             videoUrl: '/video/birthday_7789.mp4',
+            embedUrl: 'https://player.vimeo.com/video/1166854124?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479',
             description: 'Raw footage edit from 7789.'
         }
     ];
@@ -167,15 +187,26 @@ const Portfolio = () => {
                                 style={{ border: '1px solid rgba(201,162,39,0.12)', boxShadow: '0 8px 32px rgba(0,0,0,0.4)' }}
                                 whileHover={{ borderColor: 'rgba(201,162,39,0.35)', boxShadow: '0 8px 40px rgba(0,0,0,0.5), 0 0 20px rgba(201,162,39,0.06)' }}
                             >
-                                <video
-                                    src={project.videoUrl}
-                                    className="w-full h-full object-cover"
-                                    controls
-                                    playsInline
-                                    preload="metadata"
-                                >
-                                    Your browser does not support the video tag.
-                                </video>
+                                {project.embedUrl ? (
+                                    <iframe
+                                        src={project.embedUrl}
+                                        className="w-full h-full"
+                                        style={{ border: 'none' }}
+                                        allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                                        allowFullScreen
+                                        title={project.title}
+                                    ></iframe>
+                                ) : (
+                                    <video
+                                        src={project.videoUrl}
+                                        className="w-full h-full object-cover"
+                                        controls
+                                        playsInline
+                                        preload="metadata"
+                                    >
+                                        Your browser does not support the video tag.
+                                    </video>
+                                )}
 
                                 {/* Gold corner accents */}
                                 <div className="absolute top-2 left-2 w-4 h-4 border-l border-t border-chaos-gold/40 pointer-events-none z-10" />
